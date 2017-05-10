@@ -4,7 +4,7 @@ require 'nokogiri'
 require 'json'
 
 def true_o_false(elemento)
-	if elemento.css('span').text == "Yes"
+	if elemento.css('span').text.downcase == "yes"
 		return true
    	end
    	return false
